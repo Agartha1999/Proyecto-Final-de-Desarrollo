@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="probar.OPERACIONController">
+   <top>
+      <HBox prefHeight="55.0" prefWidth="134.0" style="-fx-background-color: #476BB1;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="atras" mnemonicParsing="false" onAction="#accionatras" prefHeight="64.0" prefWidth="125.0" style="-fx-background-color: #476BB1;" text="Regalos Sarita" textFill="WHITE" />
+            <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="114.0" style="-fx-background-color: #476BB1;" textFill="WHITE" />
+            <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="114.0" style="-fx-background-color: #476BB1;" textFill="WHITE" />
+            <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="114.0" style="-fx-background-color: #476BB1;" textFill="WHITE" />
+            <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="114.0" style="-fx-background-color: #476BB1;" textFill="WHITE" />
+            <Button fx:id="cerrarsesion" mnemonicParsing="false" onAction="#accioncerrarsesion" prefHeight="55.0" prefWidth="114.0" style="-fx-background-color: #476BB1;" text="Cerrar Sesion" textFill="WHITE" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <SplitPane dividerPositions="0.3108882521489971" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #1A0937;" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <TableView layoutX="-6.0" prefHeight="443.0" prefWidth="478.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="IdVenta" />
+                            <TableColumn prefWidth="93.0" text="Precio_venta" />
+                              <TableColumn prefWidth="70.0" text="Fecha" />
+                              <TableColumn prefWidth="125.0" text="Tipo_comprobante" />
+                              <TableColumn prefWidth="114.0" text="IdCliente" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </center>
+      </BorderPane>
+   </center>
+</BorderPane>

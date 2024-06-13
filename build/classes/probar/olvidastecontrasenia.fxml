@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="probar.OlvidastecontraseniaController">
+   <top>
+      <HBox prefHeight="55.0" prefWidth="700.0" style="-fx-background-color: #476BB1;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="menu" mnemonicParsing="false" onAction="#atras1" prefHeight="71.0" prefWidth="133.0" style="-fx-background-color: #476BB1;" text="Regalos Sarita" textFill="WHITE" />
+            <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="112.0" style="-fx-background-color: #476BB1;" textFill="WHITE" />
+            <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="112.0" style="-fx-background-color: #476BB1;" textFill="WHITE" />
+            <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="112.0" style="-fx-background-color: #476BB1;" textFill="WHITE" />
+            <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="112.0" style="-fx-background-color: #476BB1;" textFill="WHITE" />
+            <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="112.0" style="-fx-background-color: #476BB1;" textFill="WHITE" />
+            <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="112.0" style="-fx-background-color: #476BB1;" textFill="WHITE" />
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #BEC6D6;" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="329.0" prefHeight="405.0" prefWidth="371.0" style="-fx-background-color: #1A0937;">
+               <children>
+                  <Text fill="WHITE" layoutX="39.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI:" />
+                  <Text fill="WHITE" layoutX="35.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombres:" />
+                  <Text fill="WHITE" layoutX="38.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos:" />
+                  <Text fill="WHITE" layoutX="37.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Direccion:" />
+                  <Text fill="WHITE" layoutX="37.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono:" />
+                  <Text fill="WHITE" layoutX="35.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña:" />
+                  <TextField fx:id="tf_dni" layoutX="117.0" layoutY="42.0" prefHeight="25.0" prefWidth="208.0" promptText="Ingresar DNI" />
+                  <TextField fx:id="tf_apellidos" layoutX="118.0" layoutY="113.0" prefHeight="25.0" prefWidth="207.0" promptText="Ingresar apellidos " />
+                  <TextField fx:id="tf_nombres" layoutX="117.0" layoutY="77.0" prefHeight="25.0" prefWidth="208.0" promptText="Ingresar nombres" />
+                  <TextField fx:id="tf_direccion" layoutX="117.0" layoutY="149.0" prefHeight="25.0" prefWidth="206.0" promptText="Ingresar direccion" />
+                  <TextField fx:id="tf_telefono" layoutX="117.0" layoutY="185.0" prefHeight="25.0" prefWidth="206.0" promptText="Ingresar telefono" />
+                  <TextField fx:id="tf_contrasenia" layoutX="118.0" layoutY="293.0" prefHeight="25.0" prefWidth="205.0" promptText="Ingresar contraseña" />
+                  <Button fx:id="guardar" layoutX="99.0" layoutY="344.0" mnemonicParsing="false" onAction="#conectar_bd" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #F87CDC;" text="Guardar" textFill="#682a2a">
+                     <graphic>
+                        <ImageView fitHeight="64.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/GuardarTodo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Text fill="WHITE" layoutX="37.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sexo:" />
+                  <Text fill="WHITE" layoutX="36.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" />
+                  <TextField fx:id="tf_sexo" layoutX="117.0" layoutY="221.0" prefHeight="25.0" prefWidth="205.0" promptText="Ingresar dato" />
+                  <TextField fx:id="tf_email" layoutX="118.0" layoutY="257.0" prefHeight="25.0" prefWidth="205.0" promptText="Ingresar email" />
+                  <Label fx:id="texto" layoutX="35.0" layoutY="14.0" prefHeight="19.0" prefWidth="288.0" textFill="WHITE">
+                     <font>
+                        <Font name="Yu Gothic Regular" size="14.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <ImageView fitHeight="405.0" fitWidth="340.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/delgado.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="19.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIENVENIDO A REGALOS SARITA" textAlignment="CENTER" wrappingWidth="289.94677734375">
+               <font>
+                  <Font name="Bodoni MT Bold Italic" size="31.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="179.0" fitWidth="173.0" layoutX="72.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/6073873.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="45.0" layoutY="127.0" strokeType="INSIDE" strokeWidth="0.0" text="REGISTRO DE TRABAJADOR">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
